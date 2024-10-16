@@ -1,0 +1,148 @@
+.btnStart {
+  width: 100%;
+  height: 50px;
+
+  font-size: 25px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #fbae87, #f53c40);
+  background-size: 200% 100%;
+  background-position: left;
+  transition: background-position 1s ease;
+}
+
+.btnStart:hover {
+  background-position: right center;
+}
+
+.btnNext {
+  width: auto;
+  padding: 10px 20px;
+  margin: 5px 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+  background-color: #2469de;
+  color: white;
+  border-radius: 5px;
+
+  transition: background-color 0.3s;
+}
+
+.btnNext:hover {
+  background-color: #09358d;
+}
+
+.btnClose,
+.btnHide,
+.btnGreen {
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+}
+
+.btnClose {
+  background-color: #ff605c;
+}
+.btnHide {
+  background-color: #ffbd44;
+}
+.btnGreen {
+  background-color: #00ca4e;
+}
+
+.btnClose:hover::after {
+  content: "x";
+}
+.btnHide:hover::before {
+  content: "_";
+}
+.btnGreen:hover::before {
+  content: "+";
+}
+
+.btnRestart {
+  padding: 10px 20px;
+
+  display: flex;
+  align-items: center;
+
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btnRestart:hover {
+  background-color: #8ca045;
+  transform: scale(1.05);
+}
+
+.btnAnswer {
+  width: auto;
+  padding: 10px 20px;
+  margin: 5px 0;
+
+  border-radius: 5px;
+
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+
+  transition: background-color 0.3s;
+}
+.btnAnswer:hover {
+  background-color: #09358d;
+}
+
+.btnAnswerSelect {
+  width: auto;
+  padding: 10px 20px;
+  margin: 5px 0;
+  border-radius: 5px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #5bcd64;
+  font-size: 16px;
+}
+.btnAnswerSelect:hover,
+.btnSelect:hover {
+  background-color: #49a351;
+}
+
+.btnStart:active,
+.btnAnswer:active,
+.btnAnswerSelect:active,
+.btnNext:active,
+.btnRestart:active,
+.btnSelect:active {
+  transform: scale(0.97);
+}
+
+.btnSelect {
+  width: auto;
+  padding: 10px 20px;
+  margin: 5px 0;
+  border-radius: 5px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #5bcd64;
+  font-size: 16px;
+}

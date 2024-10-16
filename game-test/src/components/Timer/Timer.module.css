@@ -1,0 +1,29 @@
+.time {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+
+    font-size: 24px; 
+    transition: color 0.5s ease;
+  }
+  
+  .critical {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: red; 
+    animation: pulse 1s infinite; 
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1); 
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

@@ -1,0 +1,56 @@
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+}
+.game_window {
+  width: 900px;
+  min-height: 200px;
+  border-radius: 0 0 10px 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(255, 255, 255, 0.623);
+  transition: min-height 0.3s ease;
+}
+
+.btnsContainer {
+  width: 900px;
+  height: 30px;
+  padding-left: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+
+  background-color: rgb(196, 201, 206);
+  border-radius: 10px 10px 0 0;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltipText {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.tooltip:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}

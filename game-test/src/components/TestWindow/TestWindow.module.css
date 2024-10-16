@@ -1,0 +1,65 @@
+.testWindow {
+  width: 900px;
+  min-height: 100px;
+  margin: 20px 0;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.question {
+  text-align: justify;
+  font-size: 30px;
+}
+.answers {
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.actionButtonsWrapper {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.tooltipWrapper {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.tooltipText {
+  width: 140px;
+  padding: 5px;
+  border-radius: 5px;
+
+  background-color: black;
+  color: #fff;
+  text-align: center;
+
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  bottom: 5%;
+  left: 33%;
+  margin-left: -70px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltipWrapper:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
