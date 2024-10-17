@@ -427,6 +427,31 @@ export const questions = [
       { id: 4, text: "Продукты питания" },
       { id: 5, text: "Сборные грузы" },
     ],
-    isCorrect: [1, 2, 3, 4],
+    isCorrect: [2],
   },
 ];
+
+
+
+export const medicalQuestions = [
+  {
+    id: 1,
+    question: "Вопрос в разработке 1",
+    options: [
+      { id: 1, text: "Пункт а" },
+      { id: 2, text: "Пункт б" },
+      { id: 3, text: "Пункт в" },
+    ],
+    isCorrect: [2],
+  },
+  {
+    id: 2,
+    question: "Вопрос в разработке 2",
+    options: [
+      { id: 1, text: "Пункт а" },
+      { id: 2, text: "Пункт б" },
+      { id: 3, text: "Пункт в" },
+    ],
+    isCorrect: [1],
+  }
+]

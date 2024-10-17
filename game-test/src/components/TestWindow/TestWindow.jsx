@@ -4,7 +4,7 @@ import Button from "../UI/Button/Button";
 import Timer from "../Timer/Timer";
 import { questions } from "../../data";
 
-const TestWindow = ({ finishTest }) => {
+const TestWindow = ({ questions, finishTest}) => {
   const [currentQuestion, setCurrentQuestion] = useState(0); // текущий вопрос
   const [score, setScore] = useState(0); //  результаты
   const [isFinished, setIsFinished] = useState(false); // Завершение теста

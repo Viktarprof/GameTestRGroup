@@ -3,7 +3,7 @@ import Button from "../UI/Button/Button";
 import Input from "../UI/Input/Input";
 import s from "../StartWindow/StartWindow.module.css";
 
-const StartWindow = ({ startTest }) => {
+const StartWindow = ({ startTest, nameTest }) => {
   const [playerName, setPlayerName] = useState("");
   const [showError, setShowError] = useState(false);
 
@@ -24,7 +24,7 @@ const StartWindow = ({ startTest }) => {
 
   return (
     <div>
-      <h1>Test for RGroup company</h1>
+      <h1>{nameTest}</h1>
 
       {showError && <p className={s.error}>Укажите имя!</p>}
 

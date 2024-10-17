@@ -1,11 +1,11 @@
 import React from "react";
 import s from "../../UI/Button/Button.module.css";
 
-const Button = ({ text, onClick, styles, children }) => {
+const Button = ({ text, onClick, styles, icon }) => {
   return (
     <button className={`${s[styles]}`} onClick={onClick}>
       {text}
-      {children}
+      {icon}
     </button>
   );
 };

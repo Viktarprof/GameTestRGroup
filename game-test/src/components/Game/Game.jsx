@@ -5,7 +5,7 @@ import TestWindow from "../TestWindow/TestWindow";
 import StartWindow from "../StartWindow/StartWindow";
 import Button from "../UI/Button/Button";
 
-const Game = () => {
+const Game = ({ exitTest, questions, nameTest }) => {
   const [playerName, setPlayerName] = useState("");
   const [isTestStarted, setIsTestStarted] = useState(false);
   const [results, setResults] = useState(null);
@@ -47,6 +47,8 @@ const Game = () => {
     setPlayerName("");
     setResults(null);
     setIsTestStarted(false);
+    exitTest()
+    
   };
 
   return (
@@ -69,13 +71,19 @@ const Game = () => {
       </div>
 
       <div className={s.game_window}>
-        {!isTestStarted && !results && <StartWindow startTest={startTest} />}
-        {isTestStarted && <TestWindow finishTest={finishTest} />}
+        {!isTestStarted && !results && (
+          <StartWindow  startTest={startTest} 
+                        nameTest={nameTest} />
+        )}
+        {isTestStarted && (
+          <TestWindow questions={questions} 
+                      finishTest={finishTest} />
+        )}
         {results && (
           <ResultWindow
-            {...results}
-            onRestart={retryTest}
-            userList={userList}
+                        {...results}
+                        onRestart={retryTest}
+                        userList={userList}
           />
         )}
       </div>

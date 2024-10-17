@@ -89,7 +89,8 @@
   transform: scale(1.05);
 }
 
-.btnAnswer {
+.btnAnswer,
+.btnSelectTest {
   width: auto;
   padding: 10px 20px;
   margin: 5px 0;
@@ -102,8 +103,16 @@
 
   transition: background-color 0.3s;
 }
-.btnAnswer:hover {
+.btnAnswer:hover,
+.btnSelectTest:hover {
   background-color: #09358d;
+  box-shadow: 0 1px 25px 5px  black;
+}
+.btnSelectTest{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .btnAnswerSelect {

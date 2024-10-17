@@ -26,7 +26,7 @@ const ResultWindow = ({
         styles={"btnRestart"}
         onClick={onRestart}
         text={"Повторить тест"}
-        children={<FaRedo />}
+        icon={<FaRedo />}
       />
 
       <h3>Рейтинг:</h3>
