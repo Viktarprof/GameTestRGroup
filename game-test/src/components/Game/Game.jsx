@@ -4,6 +4,8 @@ import ResultWindow from "../ResultWindow/ResultWindow";
 import TestWindow from "../TestWindow/TestWindow";
 import StartWindow from "../StartWindow/StartWindow";
 import Button from "../UI/Button/Button";
+import rgroupLogo from "../../media/rGroup_LOGO.png";
+import klinika24Logo from "../../media/LogoKlinika24.png";
 
 const Game = ({ exitTest, questions, nameTest }) => {
   const [playerName, setPlayerName] = useState("");
@@ -47,12 +49,14 @@ const Game = ({ exitTest, questions, nameTest }) => {
     setPlayerName("");
     setResults(null);
     setIsTestStarted(false);
-    exitTest()
-    
+    exitTest();
   };
 
   return (
     <div className={s.gameContainer}>
+      {(nameTest === "RGroup" && (
+        <img src={rgroupLogo} alt="rgroup_logo" />
+      )) || <img src={klinika24Logo} alt="klinika24_logo" />}
       <div className={s.btnsContainer}>
         <div className={s.tooltip}>
           <Button styles={["btnClose"]} />
@@ -72,18 +76,23 @@ const Game = ({ exitTest, questions, nameTest }) => {
 
       <div className={s.game_window}>
         {!isTestStarted && !results && (
-          <StartWindow  startTest={startTest} 
-                        nameTest={nameTest} />
+          <StartWindow 
+                    nameTest={nameTest}
+                    startTest={startTest} 
+                    questions={questions} 
+          />
         )}
         {isTestStarted && (
-          <TestWindow questions={questions} 
-                      finishTest={finishTest} />
+          <TestWindow
+                    questions={questions}
+                    finishTest={finishTest}
+          />
         )}
         {results && (
           <ResultWindow
-                        {...results}
-                        onRestart={retryTest}
-                        userList={userList}
+                    {...results}
+                    onRestart={retryTest}
+                    userList={userList}
           />
         )}
       </div>

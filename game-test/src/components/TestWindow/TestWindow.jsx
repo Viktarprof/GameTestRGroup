@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import s from "../TestWindow/TestWindow.module.css";
 import Button from "../UI/Button/Button";
 import Timer from "../Timer/Timer";
-import { questions } from "../../data";
 
 const TestWindow = ({ questions, finishTest}) => {
   const [currentQuestion, setCurrentQuestion] = useState(0); // текущий вопрос

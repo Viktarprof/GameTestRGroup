@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Button from "../UI/Button/Button";
 import Input from "../UI/Input/Input";
 import s from "../StartWindow/StartWindow.module.css";
+
 
 const StartWindow = ({ startTest, nameTest }) => {
   const [playerName, setPlayerName] = useState("");
@@ -22,10 +23,12 @@ const StartWindow = ({ startTest, nameTest }) => {
     }
   };
 
+  useEffect(() => {
+    document.title = nameTest + " test";
+  }, [nameTest]);
+
   return (
     <div>
-      <h1>{nameTest}</h1>
-
       {showError && <p className={s.error}>Укажите имя!</p>}
 
       <Input

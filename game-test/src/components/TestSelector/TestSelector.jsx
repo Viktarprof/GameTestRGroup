@@ -25,7 +25,7 @@ const TestSelector = () => {
     return (
       <Game
         questions={selectedTest === questions ? questions : medicalQuestions} 
-        nameTest={selectedTest === questions ? "RGroup Test" : "Medical Tests"}
+        nameTest={selectedTest === questions ? "RGroup" : "Klinika 24"}
         exitTest={exitTest}
       />
     );
@@ -37,13 +37,13 @@ const TestSelector = () => {
       <div>
         <Button
           styles={["btnSelectTest"]}
-          text={"RGroup Test"}
+          text={"RGroup"}
           onClick={() => handleSelectTest(questions)}
           icon={<PiTruckTrailerFill style={{ fontSize: "24px" }} />}
         />
         <Button
           styles={["btnSelectTest"]}
-          text={"Medicine Test"}
+          text={"Klinika 24"}
           onClick={() => handleSelectTest(medicalQuestions)}
           icon={<FaSuitcaseMedical style={{ fontSize: "22px" }} />}
         />
