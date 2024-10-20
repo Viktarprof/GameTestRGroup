@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/GameTestRGroup/static/css/main.427cbd52.css",
-    "main.js": "/GameTestRGroup/static/js/main.4fe64caa.js",
+    "main.css": "/GameTestRGroup/static/css/main.987a933d.css",
+    "main.js": "/GameTestRGroup/static/js/main.8124c3b1.js",
+    "static/media/LogoKlinika24.png": "/GameTestRGroup/static/media/LogoKlinika24.2524f276e6b2ff1330c6.png",
     "index.html": "/GameTestRGroup/index.html",
-    "main.427cbd52.css.map": "/GameTestRGroup/static/css/main.427cbd52.css.map",
-    "main.4fe64caa.js.map": "/GameTestRGroup/static/js/main.4fe64caa.js.map"
+    "main.987a933d.css.map": "/GameTestRGroup/static/css/main.987a933d.css.map",
+    "main.8124c3b1.js.map": "/GameTestRGroup/static/js/main.8124c3b1.js.map"
   },
   "entrypoints": [
-    "static/css/main.427cbd52.css",
-    "static/js/main.4fe64caa.js"
+    "static/css/main.987a933d.css",
+    "static/js/main.8124c3b1.js"
   ]
 }
