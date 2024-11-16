@@ -432,26 +432,244 @@ export const questions = [
 ];
 
 
-
-export const medicalQuestions = [
+export const mediceneTest =[
   {
     id: 1,
-    question: "Вопрос в разработке 1",
-    options: [
-      { id: 1, text: "Пункт а" },
-      { id: 2, text: "Пункт б" },
-      { id: 3, text: "Пункт в" },
-    ],
-    isCorrect: [2],
-  },
-  {
-    id: 2,
-    question: "Вопрос в разработке 2",
-    options: [
-      { id: 1, text: "Пункт а" },
-      { id: 2, text: "Пункт б" },
-      { id: 3, text: "Пункт в" },
-    ],
-    isCorrect: [1],
-  }
+  question: "Który z poniższych objawów NIE jest typowy dla cukrzycy typu 2?",
+  options: [
+    {id: 1, text:"Częste oddawanie moczu" },
+    {id: 2, text:"Nagły spadek masy ciała" },
+    {id: 3, text:"Nadmierne pragnienie" },
+    {id: 4, text:"Bóle stawów" },
+
+  ],
+  isCorrect:[4],
+},
+{
+  id: 2,
+question: "W jakiej kolejności pokarm przemieszcza się przez układ trawienny?",
+options: [
+  {id: 1, text:"Przełyk → Żołądek → Jelito cienkie → Jelito grube" },
+  {id: 2, text:"Żołądek → Przełyk → Jelito cienkie → Jelito grube" },
+  {id: 3, text:"Jelito cienkie → Przełyk → Żołądek → Jelito grube" },
+  {id: 4, text:"Przełyk → Jelito cienkie → Żołądek → Jelito grube" },
+
+],
+isCorrect:[1],
+},
+{
+  id: 3,
+question: "Który z wymienionych objawów najczęściej towarzyszy zawałowi mięśnia sercowego?",
+options: [
+  {id: 1, text:"Ból promieniujący do lewej ręki i żuchwy" },
+  {id: 2, text:"Ból w dolnej części pleców" },
+  {id: 3, text:"Kaszel i duszność" },
+  {id: 4, text:"Obrzęk nóg" },
+
+],
+isCorrect:[1],
+},
+{
+  id: 4,
+question: "W astmie oskrzelowej występuje charakterystyczna obturacja. Czym jest obturacja?",
+options: [
+  {id: 1, text:"Zmniejszenie drożności dróg oddechowych" },
+  {id: 2, text:"Nagły spadek ciśnienia krwi" },
+  {id: 3, text:"Obrzęk kończyn" },
+  {id: 4, text:"Utrata masy ciała" },
+
+],
+isCorrect:[1],
+},
+{
+  id: 5,
+question: "Co oznacza termin 'insulinooporność' w kontekście cukrzycy?",
+options: [
+  {id: 1, text:"Stan, w którym trzustka nie produkuje insuliny" },
+  {id: 2, text:"Stan, w którym komórki są mniej wrażliwe na insulinę" },
+  {id: 3, text:"Nadmierne wytwarzanie glukozy przez wątrobę" },
+  {id: 4, text:"Zmniejszone stężenie glukozy we krwi" },
+
+],
+isCorrect:[2],
+},
+{
+  id: 6,
+question: "Jaki objaw wyróżnia dusznicę bolesną stabilną od niestabilnej?",
+options: [
+  {id: 1, text:"Stabilna występuje tylko przy wysiłku, niestabilna również w spoczynku" },
+  {id: 2, text:"Stabilna pojawia się w nocy, niestabilna w dzień" },
+  {id: 3, text:"Stabilna wywołuje kaszel, niestabilna duszność" },
+  {id: 4, text:"Stabilna objawia się bólem pleców, niestabilna bólem nóg " },
+
+],
+isCorrect:[1],
+},
+{
+  id: 7,
+question: "Jakie stawy są najczęściej zajęte przez reumatoidalne zapalenie stawów na początkowym etapie choroby?",
+options: [
+  {id: 1, text:"Stawy kręgosłupa" },
+  {id: 2, text:"Stawy biodrowe" },
+  {id: 3, text:"Stawy dłoni i nadgarstków" },
+  {id: 4, text:"Stawy kolanowe " },
+
+],
+isCorrect:[3],
+},
+{
+  id: 8,
+question: "Co oznacza 'erytrocyturia' w kontekście układu moczowego?",
+options: [
+  {id: 1, text:"Obecność leukocytów w moczu" },
+  {id: 2, text:"Obecność erytrocytów w moczu" },
+  {id: 3, text:"Obecność białka w moczu" },
+  {id: 4, text:"Obecność glukozy w moczu" },
+
+],
+isCorrect:[2],
+},
+{
+  id: 9,
+question: "Który z poniższych objawów najczęściej występuje w toczniu rumieniowatym układowym?",
+options: [
+  {id: 1, text:"Ból w klatce piersiowej" },
+  {id: 2, text:"Zmęczenie i charakterystyczna wysypka na twarzy w kształcie motyla" },
+  {id: 3, text:"Częste oddawanie moczu" },
+  {id: 4, text:"Utrata wzroku" },
+
+],
+isCorrect:[2],
+},
+{
+  id: 10,
+question: "Jakie działanie ma insulina w organizmie?",
+options: [
+  {id: 1, text:"Zwiększa stężenie glukozy we krwi" },
+  {id: 2, text:"Zmniejsza stężenie glukozy we krwi" },
+  {id: 3, text:"Stymuluje produkcję glukozy przez wątrobę" },
+  {id: 4, text:"Zwiększa poziom glikogenu w mięśniach" },
+
+],
+isCorrect:[2],
+},
+{
+  id: 11,
+question: "Która struktura w płucach jest odpowiedzialna za wymianę gazową?",
+options: [
+  {id: 1, text:"Oskrzela" },
+  {id: 2, text:"Oskrzela główne" },
+  {id: 3, text:"Pęcherzyki płucne" },
+  {id: 4, text:"Przepona" },
+
+],
+isCorrect:[3],
+},
+{
+  id: 12,
+question: "Jak nazywa się zaburzenie charakterystyczne dla astmy, polegające na napadowym zwężeniu oskrzeli?",
+options: [
+  {id: 1, text:"Bronchospazm" },
+  {id: 2, text:"Odma opłucnowa" },
+  {id: 3, text:"Rozedma" },
+  {id: 4, text:"Zapalenie płuc " },
+],
+isCorrect:[1],
+},
+{
+  id: 13,
+question: "Które z wymienionych działań jest podstawowym środkiem w leczeniu cukrzycy typu 1?",
+options: [
+  {id: 1, text:"Dieta niskowęglowodanowa" },
+  {id: 2, text:"Stosowanie insuliny" },
+  {id: 3, text:"Ćwiczenia fizyczne" },
+  {id: 4, text:"Spożywanie dużej ilości wody" },
+
+],
+isCorrect:[2],
+},
+{
+  id: 14,
+question: "W jakiej kolejności przepływa krew przez serce?",
+options: [
+  {id: 1, text:"Przedsionek prawy → Komora prawa → Przedsionek lewy → Komora lewa" },
+  {id: 2, text:"Komora lewa → Przedsionek lewy → Komora prawa → Przedsionek prawy" },
+  {id: 3, text:"Przedsionek prawy → Komora lewa → Przedsionek lewy → Komora prawa" },
+  {id: 4, text:"Przedsionek lewy → Komora lewa → Przedsionek prawy → Komora prawa" },
+
+],
+isCorrect:[1],
+},
+{
+  id: 15,
+question: "Jaki jest najczęstszy objaw zaawansowanej miażdżycy tętnic?",
+options: [
+  {id: 1, text:"Nadciśnienie" },
+  {id: 2, text:"Ból głowy" },
+  {id: 3, text:"Chromanie przestankowe (ból kończyn dolnych podczas chodzenia)" },
+  {id: 4, text:"Duszność" },
+
+],
+isCorrect:[3],
+},
+{
+  id: 16,
+question: "W którym stadium choroby wieńcowej można zauważyć dusznicę bolesną niestabilną?",
+options: [
+  {id: 1, text:"Na bardzo wczesnym etapie" },
+  {id: 2, text:"W zaawansowanym etapie, kiedy dochodzi do poważnego zwężenia tętnic wieńcowych" },
+  {id: 3, text:"Po całkowitym wyleczeniu" },
+  {id: 4, text:"Tylko u pacjentów po operacji serca" },
+
+],
+isCorrect:[2],
+},
+{
+  id: 17,
+question: "Co oznacza termin 'hiperglikemia'?",
+options: [
+  {id: 1, text:"Zbyt niski poziom glukozy we krwi" },
+  {id: 2, text:"Zbyt wysoki poziom glukozy we krwi" },
+  {id: 3, text:"Wysoki poziom cholesterolu we krwi" },
+  {id: 4, text:"Niedobór insuliny" },
+
+],
+isCorrect:[2],
+},
+{
+  id: 18,
+question: "Która część układu pokarmowego odpowiada za wchłanianie większości składników odżywczych?",
+options: [
+  {id: 1, text:"Przełyk" },
+  {id: 2, text:"Jelito cienkie" },
+  {id: 3, text:"Jelito grube" },
+  {id: 4, text:"Żołądek" },
+
+],
+isCorrect:[2],
+},
+{
+  id: 19,
+question: "W którym narządzie jest produkowana insulina?",
+options: [
+  {id: 1, text:"Wątroba" },
+  {id: 2, text:"Jelito cienkie" },
+  {id: 3, text:"Trzustka" },
+  {id: 4, text:"Nadnercza" },
+
+],
+isCorrect:[3],
+},
+{
+  id: 20,
+question: "Co jest podstawową funkcją nerek w układzie moczowym?",
+options: [
+  {id: 1, text:"Produkcja hormonów" },
+  {id: 2, text:"Filtracja krwi i usuwanie zbędnych produktów przemiany materii" },
+  {id: 3, text:"Wchłanianie składników odżywczych" },
+  {id: 4, text:"Produkcja komórek krwi" },
+
+],
+isCorrect:[2],
+}
 ]

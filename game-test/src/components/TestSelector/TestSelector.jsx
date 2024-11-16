@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import s from "../TestSelector/TestSelector.module.css";
 import Button from "../UI/Button/Button";
-import { questions, medicalQuestions } from "../../data";
+import { questions, mediceneTest } from "../../data";
 import { FaSuitcaseMedical } from "react-icons/fa6";
 import { PiTruckTrailerFill } from "react-icons/pi";
 import Game from "../Game/Game";
@@ -24,7 +24,7 @@ const TestSelector = () => {
   if (selectedTest) {
     return (
       <Game
-        questions={selectedTest === questions ? questions : medicalQuestions} 
+        questions={selectedTest === questions ? questions : mediceneTest} 
         nameTest={selectedTest === questions ? "RGroup" : "Klinika 24"}
         exitTest={exitTest}
       />
@@ -44,7 +44,7 @@ const TestSelector = () => {
         <Button
           styles={["btnSelectTest"]}
           text={"Klinika 24"}
-          onClick={() => handleSelectTest(medicalQuestions)}
+          onClick={() => handleSelectTest(mediceneTest)}
           icon={<FaSuitcaseMedical style={{ fontSize: "22px" }} />}
         />
       </div>

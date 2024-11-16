@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import s from "../Timer/Timer.module.css";
 
 const Timer = ({ onTimeUp }) => {
-  const timeTest = 15 * 60;
+  const timeTest = 20 * 60;
   const [timeLeft, setTimeLeft] = useState(timeTest);
   const [isCritical, setIsCritical] = useState(false); 
 
